@@ -10,7 +10,7 @@ public class TextExcel
 
 	public static void main(String[] args)
 	{
-		Spreadsheet[][] 1 = new Spreadsheet[getRows()][getCols()];
+		Spreadsheet 1 = new Spreadsheet();
 		Scanner userInput = new Scanner(System.in);
 	    String input = userInput.nextLine();
 	   //terminates scanner if user types "quit"
@@ -18,7 +18,9 @@ public class TextExcel
 	    	userInput.close();
 	    }	
 	    	else {
-	    		1.processCommand(input);	
+	    		1.processCommand(input);
+	    	
+	    	
 	    }
 	}
 }
