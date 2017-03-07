@@ -1,7 +1,6 @@
 package textExcel;
 
 import java.io.FileNotFoundException;
-import java.util.*;
 import java.util.Scanner;
 
 // Update this file with your own code.
@@ -11,7 +10,7 @@ public class TextExcel
 
 	public static void main(String[] args)
 	{
-		Spreadsheet Spread = new Spreadsheet();
+		Spreadsheet[][] 1 = new Spreadsheet[getRows()][getCols()];
 		Scanner userInput = new Scanner(System.in);
 	    String input = userInput.nextLine();
 	   //terminates scanner if user types "quit"
@@ -19,7 +18,7 @@ public class TextExcel
 	    	userInput.close();
 	    }	
 	    	else {
-	    		Spread.processCommand(input);
+	    		1.processCommand(input);	
 	    }
 	}
 }

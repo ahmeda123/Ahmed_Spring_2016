@@ -20,7 +20,7 @@ public class SpreadsheetLocation implements Location
     public int getCol()
     {
     	this.col = location.charAt(0);
-    	return this.col - 65;
+    	return this.col = 65;
     }
   
     
