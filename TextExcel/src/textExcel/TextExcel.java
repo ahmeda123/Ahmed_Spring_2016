@@ -11,6 +11,12 @@ public class TextExcel
 
 	public static void main(String[] args)
 	{
+		TestsALL.Helper th = new TestsALL.Helper();
+        System.out.println(th.getText());
+        
+        Spreadsheet hi = new Spreadsheet();
+        System.out.println(hi.getGridText());
+		
 		Spreadsheet Spread = new Spreadsheet();
 		Scanner userInput = new Scanner(System.in);
 	    String input = userInput.nextLine();
@@ -18,8 +24,8 @@ public class TextExcel
 	    if (input == "quit") {
 	    	userInput.close();
 	    }	
-	    	else {
-	    		Spread.processCommand(input);
+	    else {
+	    	Spread.processCommand(input);
 	    }
 	}
 }

@@ -1,0 +1,31 @@
+package textExcel;
+
+import java.io.FileNotFoundException;
+import java.util.*;
+import java.util.Scanner;
+
+// Update this file with your own code.
+
+public class TextExcel
+{
+
+	public static void main(String[] args)
+	{
+		TestsALL.Helper th = new TestsALL.Helper();
+        System.out.println(th.getText());
+        
+        Spreadsheet hi = new Spreadsheet();
+        System.out.println(hi.getGridText());
+		
+		Spreadsheet Spread = new Spreadsheet();
+		Scanner userInput = new Scanner(System.in);
+	    String input = userInput.nextLine();
+	   //terminates scanner if user types "quit"
+	    if (input == "quit") {
+	    	userInput.close();
+	    }	
+	    	else {
+	    		Spread.processCommand(input);
+	    }
+	}
+}
